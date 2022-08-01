@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh; /*viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', cursive;
+}
+
+.content-box {
+    width: 400px;
+    height: 600px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: rgba(57, 96, 223, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.content-text {
+    padding: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 20px;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+}
+
+.content-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 16px;
+}
+
+.content-img {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+h5 {
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 13px;
+    color: hsl(245, 75%, 52%);
+}
+
+.btn:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.content-btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.btn-primary {
+    background-color: hsl(245, 75%, 52%);
+    padding: 15px;
+    border-radius: 10px;
+    color: hsl(25, 100%, 98%);
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: rgba(85, 95, 231, 0.3) 0px 20px 30px;
+}
+
+.btn-primary:hover {
+    opacity: 0.7;
+}
+
+.btn-secondary {
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+
+.btn-secondary:hover {
+    color: hsl(223, 47%, 23%);
+}
